@@ -1,0 +1,445 @@
+.button {
+  background-color: #C1F7D5;
+  border-radius: 100px;
+  padding: 14px;
+}
+.buttonMobile {
+  background-color: #C1F7D5;
+  border-radius: 50px;
+  padding: 7px;
+}
+.fondVert {
+  width: 1440px;
+  height: 672px;
+  background-size: cover;
+  z-index: -10;
+  opacity: 0.76;
+  background-image: linear-gradient(90deg, rgba(193, 247, 213, 0.6) 0%, rgba(193, 247, 213, 0.6) 100%), url("../img/fondFirstPage.png");
+}
+.fondVertMobile {
+  width: 600px;
+  height: 80vh;
+  z-index: -10;
+  opacity: 0.76;
+  background-image: linear-gradient(90deg, rgba(193, 247, 213, 0.6) 0%, rgba(193, 247, 213, 0.6) 100%), url("../img/fondFirstPage.png");
+}
+.boiteButton {
+  background-color: #354463;
+  color: #fff;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  z-index: 5;
+}
+.boiteButtonMobile {
+  background-color: #354463;
+  color: #fff;
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  z-index: 5;
+}
+body {
+  width: 1440px;
+  height: 100vh;
+  background-color: #C1F7D5;
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 128px;
+  background-color: #fff;
+}
+header div {
+  width: 320px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header div img {
+  width: 160px;
+  height: 63px;
+}
+nav {
+  width: 1120px;
+  height: 128px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  height: 128px;
+  align-items: center;
+}
+nav ul li {
+  text-decoration: none;
+  font-size: 16px;
+  color: #354463;
+}
+nav ul :nth-child(4) {
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #C1F7D5;
+  border-radius: 100px;
+  padding: 14px;
+}
+.containerFirst {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1440px;
+  height: 672px;
+  background-size: cover;
+  z-index: -10;
+  opacity: 0.76;
+  background-image: linear-gradient(90deg, rgba(193, 247, 213, 0.6) 0%, rgba(193, 247, 213, 0.6) 100%), url("../img/fondFirstPage.png");
+}
+.containerFirst .blocTheIssue {
+  width: 544px;
+  height: 416px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+}
+.containerFirst .blocTheIssue .boite {
+  background-color: #354463;
+  color: #fff;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  z-index: 5;
+  transform: translate(-140px, -20px);
+}
+.containerFirst .blocTheIssue :nth-child(2) {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  text-align: left;
+  width: 416px;
+  height: 221px;
+  transform: translateY(30px);
+}
+.containerFirst .blocTheIssue :nth-child(3) {
+  font-size: 18px;
+  color: #354463;
+  border-bottom: 1px #354463 solid;
+  transform: translate(-13px, 40px);
+}
+.containerFirst .blocStopClimate {
+  width: 296px;
+  height: 416px;
+  font-size: 72px;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  transform: translate(-180px, 12px);
+}
+.containerFirst .blocStopClimate h1 {
+  color: #fff;
+}
+.buttonValeur {
+  display: flex;
+  justify-content: center;
+}
+.buttonValeur .boiteAction {
+  background-color: #354463;
+  color: #fff;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  z-index: 5;
+  transform: translateY(-20px);
+}
+.takeAction {
+  height: 240px;
+  margin: 0 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-20px);
+}
+.takeAction div {
+  width: 232px;
+}
+.takeAction div h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.takeAction div p {
+  font-size: 16px;
+  color: #354463;
+  font-weight: lighter;
+  transform: translateY(9px);
+}
+.whatWeDo {
+  width: 1440px;
+  height: 1059px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #354463;
+}
+.whatWeDo .whatWeDoSectionInterne {
+  width: 1122px;
+  height: 831px;
+  transform: translateY(88px);
+}
+.whatWeDo section .boiteWhatWeDo {
+  background-color: #354463;
+  color: #fff;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  z-index: 5;
+  background-color: #fff;
+  color: #354463;
+}
+.whatWeDo section .mission {
+  font-size: 44px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 40px;
+}
+.whatWeDo .articlesBlog {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+.whatWeDo .articlesBlog section {
+  background-color: #fff;
+  width: 320px;
+  height: 528px;
+}
+.whatWeDo .articlesBlog section h2 {
+  font-size: 29px;
+  font-weight: bold;
+  width: 288px;
+  margin: 0 32px;
+}
+.whatWeDo .articlesBlog section p {
+  font-size: 16px;
+  font-weight: lighter;
+  width: 256px;
+  margin: 0 32px;
+  transform: translateY(20px);
+  line-height: 20px;
+}
+.whatWeDo .articlesBlog section div img {
+  width: 320px;
+  height: 224px;
+  opacity: 0.6;
+}
+.whatWeDo .articlesBlog section .readMore {
+  transform: translateY(40px);
+  margin: 0 32px;
+  background-color: #C1F7D5;
+  border-radius: 100px;
+  padding: 14px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+.whatWeDo .articlesBlog section .vert {
+  width: 320px;
+  height: 224px;
+  background-color: #C1F7D5;
+  transform: translate(32px, -32px);
+}
+@media screen and (max-width: 600px) {
+  body {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav {
+    display: none;
+  }
+  .containerFirst {
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 80vh;
+    z-index: -10;
+    opacity: 0.76;
+    background-image: linear-gradient(90deg, rgba(193, 247, 213, 0.6) 0%, rgba(193, 247, 213, 0.6) 100%), url("../img/fondFirstPage.png");
+  }
+  .containerFirst .blocTheIssue {
+    width: 400px;
+    height: 60vh;
+    margin-top: 5vh;
+  }
+  .containerFirst .blocTheIssue .boite {
+    background-color: #354463;
+    color: #fff;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    z-index: 5;
+    line-height: 50px;
+    width: 200px;
+    height: 50px;
+    transform: translate(-70px, -10px);
+    font-size: 17px;
+  }
+  .containerFirst .blocTheIssue :nth-child(2) {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-align: left;
+    width: 280px;
+    height: 105.5px;
+    transform: translateY(15px);
+  }
+  .containerFirst .blocTheIssue :nth-child(3) {
+    font-size: 14px;
+    color: #354463;
+    border-bottom: 1px #354463 solid;
+    transform: translate(-6.5px, 100px);
+  }
+  .containerFirst .blocStopClimate {
+    width: 500px;
+    height: 40vh;
+    font-size: 40px;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    transform: translate(0px, 120px);
+  }
+  .containerFirst .blocStopClimate h1 {
+    color: #fff;
+  }
+  .takeAction {
+    height: 60vh;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(-20px);
+  }
+  .takeAction div {
+    width: 40%;
+  }
+  .takeAction div h2 {
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .takeAction div p {
+    font-size: 18px;
+    color: #354463;
+    font-weight: lighter;
+    transform: translateY(30px);
+    text-align: center;
+  }
+  header {
+    display: flex;
+    width: 600px;
+    height: 64px;
+    background-color: #fff;
+  }
+  header div {
+    width: 160px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header div img {
+    width: 120px;
+    height: auto;
+  }
+  nav {
+    display: none;
+  }
+  .whatWeDo {
+    width: 600px;
+    height: 2100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #354463;
+  }
+  .whatWeDo .whatWeDoSectionInterne {
+    width: 400px;
+    height: 80vh;
+    transform: translateY(44px);
+  }
+  .whatWeDo section .boiteWhatWeDo {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: #354463;
+    transform: translate(340px, -65px);
+  }
+  .whatWeDo section .boiteWhatWeDo .boiteAction {
+    background-color: #354463;
+    color: #fff;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 5;
+    transform: translateY(-20px);
+  }
+  .whatWeDo section .mission {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .whatWeDo .articlesBlog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .whatWeDo .articlesBlog section {
+    background-color: #fff;
+    width: 300px;
+    height: 500px;
+    margin-top: 100px;
+  }
+  .whatWeDo .articlesBlog section h2 {
+    font-size: 30px;
+    width: 280px;
+    margin: 0 16px;
+    margin-top: 2vh;
+  }
+  .whatWeDo .articlesBlog section p {
+    font-size: 15px;
+    width: 280px;
+    margin: 0 16px;
+    transform: translateY(20px);
+    line-height: 20px;
+  }
+  .whatWeDo .articlesBlog section div img {
+    width: 300px;
+    height: 200px;
+    opacity: 0.6;
+  }
+  .whatWeDo .articlesBlog section .readMore {
+    margin: 0 16px;
+    background-color: #C1F7D5;
+    border-radius: 50px;
+    padding: 7px;
+    border: none;
+    width: 270px;
+    height: 70px;
+    font-size: 16px;
+  }
+  .whatWeDo .articlesBlog section .vert {
+    width: 300px;
+    height: 200px;
+    transform: translate(16px, -16px);
+  }
+}

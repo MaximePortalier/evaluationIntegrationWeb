@@ -1,0 +1,443 @@
+@heightHeader:128px;
+@widthBody:1440px;
+@colorBlue:#354463;
+@colorGreen:#C1F7D5;
+@marginArticle:32px;
+@widthbodyMobile:600px;
+@marginArticleMobile:16px;
+@heightHeaderMobile:64px;
+
+
+.button {
+    background-color: @colorGreen;
+    border-radius: 100px;
+    padding:14px;
+}
+
+.buttonMobile {
+    background-color: @colorGreen;
+    border-radius: 50px;
+    padding:7px;
+}
+
+.fondVert {
+    width: @widthBody;
+    height: 672px;
+    background-size: cover;
+    z-index: -10;
+    opacity: 0.76;
+    background-image:linear-gradient(90deg, rgba(193,247,213,0.6) 0%, rgba(193,247,213,0.6) 100%),
+    url("../img/fondFirstPage.png");
+}
+
+.fondVertMobile {
+    width: @widthbodyMobile;
+    height: 80vh;
+    z-index: -10;
+    opacity: 0.76;
+    background-image:linear-gradient(90deg, rgba(193,247,213,0.6) 0%, rgba(193,247,213,0.6) 100%),
+    url("../img/fondFirstPage.png");
+}
+
+.boiteButton {
+    background-color: #354463;
+    color: #fff;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 5;
+}
+
+.boiteButtonMobile {
+    background-color: #354463;
+    color: #fff;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    z-index: 5;
+}
+
+body {
+    width: @widthBody;
+    height: 100vh;
+    background-color: @colorGreen;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: @heightHeader;
+    background-color: #fff;
+    div {
+        width: 320px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        img {
+            width: 160px;
+            height: 63px;
+        }
+    }
+}
+
+nav {
+    width: 1120px;
+    height: @heightHeader;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        height: @heightHeader;
+        align-items: center;
+        li {
+            text-decoration: none;
+            font-size: 16px;
+            color: @colorBlue;
+        }
+        :nth-child(4) {
+            font-weight: bold;
+            font-size: 18px;
+            .button();
+        }
+    }
+}
+
+.containerFirst {
+    display: flex;
+    width: @widthBody;
+    height: 672px;
+    justify-content: space-around;
+    align-items: center;
+    .fondVert();
+        .blocTheIssue {
+            width: 544px;
+            height: 416px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #fff;
+            .boite {
+                .boiteButton();
+                transform: translate(-140px,-20px);
+            }
+            :nth-child(2) {
+                font-size: 48px;
+                font-weight: bold;;
+                text-align: center;
+                text-align: left;
+                width: 416px;
+                height: 221px;
+                transform: translateY(30px);
+            }
+            :nth-child(3) {
+                font-size: 18px;
+                color: @colorBlue;
+                border-bottom: 1px @colorBlue solid;
+                transform: translate(-13px, 40px);
+            }
+        }
+        .blocStopClimate {
+            width: 296px;
+            height: 416px;
+            font-size: 72px;
+            text-transform: uppercase;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: flex-start;
+            transform: translate(-180px,12px);
+            h1 {
+                color: #fff;
+            }
+        }
+}
+
+.buttonValeur {
+    display: flex;
+    justify-content: center;
+    .boiteAction {
+        .boiteButton();
+        transform: translateY(-20px);
+        
+    }
+}
+
+.takeAction {
+    height: 240px;
+    margin: 0 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-20px);
+        div {
+            width: 232px;
+            h2 {
+                font-size: 28px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 16px;
+                color: @colorBlue;
+                font-weight: lighter;
+                transform: translateY(9px);
+            }
+        }
+}
+
+.whatWeDo {
+    width: @widthBody;
+    height: 1059px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @colorBlue;
+    .whatWeDoSectionInterne {
+        width: 1122px;
+        height: 831px;
+        transform: translateY(88px);
+    }
+        section {
+            .boiteWhatWeDo {
+                .boiteButton();
+                background-color: #fff;
+                color: @colorBlue;
+            }
+            .mission {
+                font-size: 44px;
+                font-weight: bold;
+                color: #fff;
+                margin-top: 40px;
+            }
+        }
+        .articlesBlog {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 75px;
+            section {
+                background-color: #fff;
+                width: 320px;
+                height: 528px;
+                h2 {
+                    font-size: 29px;
+                    font-weight: bold;
+                    width: 288px;
+                    margin: 0 @marginArticle;
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: lighter;
+                    width: 256px;
+                    margin: 0 @marginArticle;
+                    transform: translateY(20px);
+                    line-height: 20px;
+                }
+                div {
+                    img {
+                        width: 320px;
+                        height: 224px;
+                        opacity: 0.6;
+                    }
+                }
+                .readMore {
+                    transform: translateY(40px);
+                    margin: 0 @marginArticle;
+                    .button();
+                    border: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                .vert {
+                    width: 320px;
+                    height: 224px;
+                    background-color: @colorGreen;
+                    transform: translate(32px,-32px);
+                }
+            }
+        }
+}
+
+
+@media screen and (max-width:600px) {
+
+
+    body {
+        width: @widthbodyMobile;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        display: none;
+    }
+    .containerFirst {
+        flex-direction: column;
+        align-items: center;
+        .fondVertMobile();
+            .blocTheIssue {
+                width: 400px;
+                height: 60vh;
+                margin-top: 5vh;
+                .boite {
+                    .boiteButtonMobile();
+                    line-height: 50px;
+                    width: 200px;
+                    height: 50px;
+                    transform: translate(-70px,-10px);
+                    font-size: 17px;
+                }
+                :nth-child(2) {
+                    font-size: 30px;
+                    font-weight: bold;;
+                    text-align: center;
+                    text-align: left;
+                    width: 280px;
+                    height: 105.5px;
+                    transform: translateY(15px);
+                }
+                :nth-child(3) {
+                    font-size: 14px;
+                    color: @colorBlue;
+                    border-bottom: 1px @colorBlue solid;
+                    transform: translate(-6.5px, 100px);
+                }
+            }
+            .blocStopClimate {
+                width: 500px;
+                height: 40vh;
+                font-size: 40px;
+                text-transform: uppercase;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                transform: translate(0px,120px);
+                h1 {
+                    color: #fff;
+                }
+            }
+    }
+
+
+.takeAction {
+    height: 60vh;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(-20px);
+        div {
+            width: 40%;
+            h2 {
+                font-size: 27px;
+                font-weight: bold;
+                text-align: center;
+            }
+            p {
+                font-size: 18px;
+                color: @colorBlue;
+                font-weight: lighter;
+                transform: translateY(30px);
+                text-align: center;
+            }
+        }
+}
+
+header {
+    display: flex;
+    width: @widthbodyMobile;
+    height: @heightHeaderMobile;
+    background-color: #fff;
+    div {
+        width: 160px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        img {
+            width: 120px;
+            height: auto;
+        }
+    }
+}
+
+nav {
+    display: none;
+
+}
+
+    .whatWeDo {
+        width: @widthbodyMobile;
+        height: 2100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: @colorBlue;
+        .whatWeDoSectionInterne {
+            width: 400px;
+            height: 80vh;
+            transform: translateY(44px);
+        }
+            section {
+                .boiteWhatWeDo {
+                    .buttonValeur();
+                    background-color: #fff;
+                    color: @colorBlue;
+                    transform: translate(340px,-65px);
+                }
+                .mission {
+                    font-size: 30px;
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
+            .articlesBlog {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 30px;
+                section {
+                    background-color: #fff;
+                    width: 300px;
+                    height: 500px;
+                    margin-top: 100px;
+                    h2 {
+                        font-size: 30px;
+                        width: 280px;
+                        margin: 0 @marginArticleMobile;
+                        margin-top: 2vh;
+                    }
+                    p {
+                        font-size: 15px;
+                        width: 280px;
+                        margin: 0 @marginArticleMobile;
+                        transform: translateY(20px);
+                        line-height: 20px;
+                    }
+                    div {
+                        img {
+                            width: 300px;
+                            height: 200px;
+                            opacity: 0.6;
+                        }
+                    }
+                    .readMore {
+                        margin: 0 @marginArticleMobile;
+                        .buttonMobile();
+                        border: none;
+                        width:270px;
+                        height: 70px;
+                        font-size: 16px;
+                    }
+                    .vert {
+                        width: 300px;
+                        height: 200px;
+                        transform: translate(16px,-16px);
+                    }
+                }
+            }
+ 
+
+}
+}
